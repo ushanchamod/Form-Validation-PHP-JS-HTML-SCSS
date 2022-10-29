@@ -14,7 +14,7 @@
 
         <!--End of left div-->
         <div class="right">
-          <form action="main.php" method="post">
+          <form action="../backend/login-submit.php" method="post">
             <h2 class="title">Login</h2>
 
             <div class="emailDiv">

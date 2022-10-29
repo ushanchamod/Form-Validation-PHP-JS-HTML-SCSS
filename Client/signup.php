@@ -13,7 +13,7 @@
         <!--End of left div-->
         <div class="right">
           <h2>Sign Up</h2>
-          <form action="main.php" method="post" id="myForm" name=signUpForm>
+          <form action="../backend/sign-up-submit.php" method="POST" id="myForm" name=signUpForm>
             <table>
               <tbody>
                 <!-- first Name &last Name -->
@@ -106,12 +106,12 @@
                     <span id="passwordRequire">Please Enter Password</span><br>
                     <div class=agreeCheck>
                     <input type="checkbox" name="condition" id="check-box">
-                    <span style="visibility: visible;">I Agree terms & conditions</span>
+                    <span style="visibility: visible;" id="check-box-text">I Agree terms & conditions</span>
                     </div>
                   </td>
  
                   <td>
-                    <label for="passwordInputRe" id="password">Re-Password</Address></label>
+                    <label for="passwordInputRe" id="password">Re-Password </label>
                     <input
                       type="password"
                       name="pass2"
@@ -151,6 +151,8 @@
         let mobile = document.getElementById("mobileInput");
         let password1 = document.getElementById("passwordInput");
         let password2 = document.getElementById("passwordInputRe");
+        let agreement = document.getElementById("check-box");
+        let checkBoxText = document.getElementById("check-box-text");
 
         if(fName.value.length == 0){
           document.getElementById("firstNameRequire").style="visibility: visible;"
@@ -220,9 +222,21 @@
           }
         }
 
+        // if(agreement.length == 0){
+          
+        //   return false;
+        // }else{
+        //   document.getElementById("passwordRequire").style="visibility: hidden;"
+        // }
+
+        agreement.checked ? document.getElementById("myForm").submit() : (
+          checkBoxText.style="color:red; visibility: visible;"
+        );
+          
 
           // document.getElementById("myForm").submit();
-          console.log("Submited..");
+          // console.log("Submited..");
+          // console.log(agreement.checked);
 
       }
     </script>
