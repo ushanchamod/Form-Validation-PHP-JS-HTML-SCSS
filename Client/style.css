@@ -23,6 +23,7 @@ body {
 .mainCard {
   display: flex;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  overflow: hidden;
 }
 
 .left {
@@ -66,7 +67,7 @@ body {
   border-radius: 4px;
   width: 200px;
 }
-.right form input[type=submit] {
+.right form button {
   width: 100%;
   border: none;
   margin: 10px 0;
@@ -79,7 +80,7 @@ body {
   margin-top: 20px;
   transition: 0.2s ease-in-out;
 }
-.right form input[type=submit]:hover {
+.right form button:hover {
   background-color: blueviolet;
 }
 .right form .signUpLink {
@@ -88,4 +89,49 @@ body {
   font-size: 12px;
   text-align: center;
   margin-bottom: 20px;
+}
+
+.signUpContainer {
+  background-color: rgb(243, 243, 243);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.signUpContainer .mainCard {
+  border: 1px #eee solid;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.signUpContainer .mainCard .right h2 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 40px;
+}
+.signUpContainer .mainCard .right form {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.signUpContainer .mainCard .right form input[type=password],
+.signUpContainer .mainCard .right form input[type=text],
+.signUpContainer .mainCard .right form input[type=address],
+.signUpContainer .mainCard .right form input[type=tel],
+.signUpContainer .mainCard .right form input[type=email] {
+  background-color: #fff;
+  border: 1px rgb(202, 202, 202) solid;
+  padding: 10px;
+  border-radius: 4px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.signUpContainer .mainCard .right form input[type=address] {
+  width: 384px;
+}
+.signUpContainer .mainCard .right form label {
+  margin-top: 5px;
+  font-weight: 500;
+}
+.signUpContainer .mainCard .right form table td {
+  padding: 5px;
 }/*# sourceMappingURL=style.css.map */

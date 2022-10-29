@@ -10,7 +10,7 @@ $font-family-three: Arial, Helvetica, sans-serif;
 
 $label-font-size: 17px;
 
-body{
+body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -30,6 +30,7 @@ body{
 .mainCard {
   display: flex;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  overflow: hidden;
 }
 
 .left {
@@ -78,7 +79,7 @@ body{
       width: 200px;
     }
 
-    input[type="submit"] {
+    button {
       width: 100%;
       border: none;
       margin: 10px 0;
@@ -92,7 +93,7 @@ body{
       transition: 0.2s ease-in-out;
     }
 
-    input[type="submit"]:hover {
+    button:hover {
       background-color: blueviolet;
     }
 
@@ -106,8 +107,57 @@ body{
   }
 }
 
-
 // Sign Up
-.signUpContainer{
-  
+.signUpContainer {
+  background-color: rgb(243, 243, 243);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .mainCard {
+    border: 1px #eee solid;
+    border-radius: 3px;
+    overflow: hidden;
+
+    .right {
+
+      h2{
+        text-align: center;
+        font-family: $font-family-one;
+        padding-top: 40px;
+      }
+      form {
+        padding-top: 30px;
+        padding-bottom: 20px;
+
+        input[type="password"],
+        input[type="text"],
+        input[type="address"],
+        input[type="tel"],
+        input[type="email"] {
+          background-color: #fff;
+          border: 1px rgb(202, 202, 202) solid;
+          padding: 10px;
+          border-radius: 4px;
+          width:  max-content;
+        }
+
+        input[type="address"]{
+          width: calc(192*2px);
+        }
+
+        label{
+          margin-top: 5px;
+          font-weight: 500;
+        }
+
+        table{
+          td{
+            padding: 5px;
+          }
+        }
+      }
+    }
+  }
 }

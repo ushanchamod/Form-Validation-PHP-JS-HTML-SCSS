@@ -10,9 +10,7 @@
   <body>
     <div class="container">
       <div class="mainCard">
-        <div class="left">
-          <!-- <img src="./img/login-background.jpg" alt="image"> -->
-        </div>
+        <div class="left"></div>
 
         <!--End of left div-->
         <div class="right">
@@ -20,32 +18,32 @@
             <h2 class="title">Login</h2>
 
             <div class="emailDiv">
-              <label for="email" id="email">Email</label>
+              <label for="emailInput" id="email">Email</label>
               <input
                 type="email"
                 name="email"
-                id="userEmail"
+                id="emailInput"
                 placeholder="Enter Your Email"
                 required
               />
             </div>
 
             <div class="passwordDiv">
-              <label for="password" id="password">Password</label>
+              <label for="passwordInput" id="password">Password</label>
               <input
                 type="password"
                 name="pass"
-                id="userPassword"
+                id="passwordInput"
                 placeholder="Enter Your Password"
                 required
               />
             </div>
             <div class="submit">
-              <input type="submit" value="LOGIN" />
+              <button>Login</button>
             </div>
 
             <p class="signUpLink">
-              If you haven't account <a href="./signup.html">Sign Up</a>
+              If you haven't account <a href="./signup.php">Sign Up</a>
             </p>
           </form>
           <!--End of form-->
@@ -54,5 +52,10 @@
       </div>
     </div>
     <!--End of container-->
+
+    <!-- Java Script Part -->
+    <script>
+
+    </script>
   </body>
 </html>
