@@ -19,18 +19,19 @@ body {
 .container {
   width: 100vw;
   height: 100vh;
-  background-color: rgb(243, 243, 243);
+  background-color: rgb(240, 240, 240);
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px #eee solid;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .mainCard {
   display: flex;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .left {
@@ -79,6 +80,14 @@ body {
       width: 200px;
     }
 
+    .forget-password{
+      text-decoration: underline;
+      font-family: $font-family-one;
+      color: blue;
+      font-size: 13px;
+      margin-top: 7px;
+    }
+
     button {
       width: 100%;
       border: none;
@@ -114,11 +123,12 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  overflow-y: auto;
 
   .mainCard {
     border: 1px #eee solid;
     border-radius: 10px;
-    overflow: hidden;
+    overflow-x: hidden;
 
     .right {
 
@@ -156,6 +166,21 @@ body {
           td{
             padding: 5px;
           }
+
+          .agreeCheck{
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+            input{
+              font-size: 17px;
+            }
+            span{
+              color:rgb(34, 34, 34);
+              padding-left: 10px;
+              font-size: 13px;
+              
+            }
+          }
         }
       }
     }
@@ -168,4 +193,5 @@ form span{
   font-family: $font-family-three;
   font-size: 12px;
   visibility: hidden;
+  
 }

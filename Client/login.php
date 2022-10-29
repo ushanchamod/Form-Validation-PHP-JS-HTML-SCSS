@@ -38,6 +38,9 @@
                 required
               />
             </div>
+
+            <p class="forget-password">Forgot Password</p>
+
             <div class="submit"
             style="padding-top:20px"
             >

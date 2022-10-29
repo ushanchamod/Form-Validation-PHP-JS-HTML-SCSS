@@ -104,7 +104,10 @@
                     />
                     <br>
                     <span id="passwordRequire">Please Enter Password</span><br>
-                    <span style="visibility: hidden;">balance</span>
+                    <div class=agreeCheck>
+                    <input type="checkbox" name="condition" id="check-box">
+                    <span style="visibility: visible;">I Agree terms & conditions</span>
+                    </div>
                   </td>
  
                   <td>
@@ -120,7 +123,9 @@
                     <span id="rePasswordRequire">Please enter Re-password</span> <br>
                     <span id="rePasswordRequireSame">Please enter same password</span>
                   </td>
+
                 </tr>
+                
               </tbody>
             </table>
             <button type="button" onclick="submitForm()">Sign Up</button>
